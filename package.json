@@ -1,0 +1,26 @@
+{
+  "name": "fullstack-ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api/server.js",
+  "scripts": {
+    "start:api": "cd api && npm run server:start",
+    "start:frontend": "cd frontend && npm start",
+    "start": "npm-run-all --parallel start:api start:frontend",
+    "heroku-prebuild": "cd api &&  npm install --only=prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosueLara0/fullstack-ecommerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosueLara0/fullstack-ecommerce/issues"
+  },
+  "homepage": "https://github.com/JosueLara0/fullstack-ecommerce#readme",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

@@ -1,0 +1,10 @@
+extends base
+
+block emailContent
+    p Hi #{username}
+    p You successfully made a purchase on our Academlo Shop app 
+    p Total Price: $ #{totalPrice}
+    ul
+        each product in products
+            li Product: #{product.product.name} / Price: #{product.price} / Quantity: #{product.quantity} / Description: #{product.product.description}        
+    p Thank you for your buy and contact support if you need anything.
